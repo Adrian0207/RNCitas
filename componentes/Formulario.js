@@ -73,8 +73,8 @@ const Formulario = ({citas, setCitas,  guardarMostrarForm, guardarCitasStorage})
         const citasNuevo = [...citas, cita];
         setCitas(citasNuevo);
 
-        // Pasar las nuevas citas a storage
-        //guardarCitasStorage(JSON.stringify(citasNuevo));
+        //Pasar las nuevas citas a storage
+        guardarCitasStorage(JSON.stringify(citasNuevo));
 
         // Ocultar el formulario
         guardarMostrarForm(false);
